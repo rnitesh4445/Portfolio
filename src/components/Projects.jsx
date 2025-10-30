@@ -1,19 +1,20 @@
 import { motion } from "framer-motion";
 import React from "react";
-
+import project1 from "../../public/img/project1.png"
+import project2 from "../../public/img/project2.png"
 const projects = [
   {
     id: 1,
     title: "E-Learning Platform",
     desc: "A modern learning website with interactive lessons and user dashboards.",
-    img: "../../public/img/Screenshot 2025-10-30 223004.png",
+    img: project1,
     link: "https://e-learning-with-crud-4.onrender.com/",
   },
   {
     id: 2,
     title: "Swiggy Clone",
     desc: "A food delivery web app using Swiggy’s live API for restaurants and menus.",
-    img: "../../public/img/Screenshot 2025-10-30 223423.png",
+    img: project2,
     link: "#",
   },
 ];

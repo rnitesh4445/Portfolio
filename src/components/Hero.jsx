@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-   
+  import profile from "../../public/img/profile.jpeg"; 
 const Hero = () => {
   return (
     <section
@@ -75,7 +75,7 @@ const Hero = () => {
         <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-tr from-cyan-400 to-purple-500 p-[4px] shadow-lg">
           <div className="w-full h-full rounded-full overflow-hidden bg-white">
             <img
-              src="../../public/img/profile.jpeg" 
+              src={profile}
               alt="Profile"
               className="object-cover w-full h-full rounded-full"
             />

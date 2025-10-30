@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { Mail, Linkedin, MapPin } from "lucide-react";
+ 
 
 export default function Contact() {
   return (

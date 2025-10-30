@@ -1,16 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
-  import profile from "../../public/img/profile.jpeg"; 
+import profile from "../../public/img/profile.jpeg";
+
 const Hero = () => {
   return (
     <section
       id="home"
-      className="relative flex flex-col-reverse md:flex-row justify-center items-center text-center md:text-left h-screen bg-white overflow-hidden"
+      className="relative flex flex-col-reverse md:flex-row justify-center items-center text-center md:text-left h-screen bg-white overflow-hidden pt-20"
     >
-    
+      {/* Soft background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-cyan-50 via-white to-white"></div>
 
-    
+      {/* Floating blurred gradient animation */}
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 0.15, scale: 1.2 }}
@@ -18,7 +19,7 @@ const Hero = () => {
         className="absolute w-[600px] h-[600px] rounded-full bg-gradient-to-r from-cyan-400 to-purple-400 blur-3xl"
       ></motion.div>
 
-      
+      {/* Left Content */}
       <div className="z-10 flex-1 px-6 md:px-12">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
@@ -40,8 +41,9 @@ const Hero = () => {
         >
           A passionate{" "}
           <span className="text-cyan-600 font-medium">Web Developer</span>{" "}
-          focused on crafting clean, user-friendly web experiences using React,Express &
-          Tailwind CSS.
+          focused on crafting clean, user-friendly web experiences using{" "}
+          <span className="font-medium">React, Express</span> &{" "}
+          <span className="font-medium">Tailwind CSS</span>.
         </motion.p>
 
         <motion.div
@@ -65,7 +67,7 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      
+      {/* Right Profile Image */}
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -82,6 +84,8 @@ const Hero = () => {
           </div>
         </div>
       </motion.div>
+
+      {/* Decorative Wave at Bottom */}
       <svg
         className="absolute bottom-0 left-0 w-full"
         viewBox="0 0 1440 320"
